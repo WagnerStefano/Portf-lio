@@ -193,7 +193,7 @@ h2{
     padding: 20px 15px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 05px 100px rgb(114, 113, 113);
+    box-shadow: 0 05px 20px rgb(114, 113, 113);
     transition: 0.5s ease-in-out;
     align-items: center;
     justify-content: center;
