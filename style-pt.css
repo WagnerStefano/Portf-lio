@@ -91,13 +91,12 @@ h2 {
   border: solid black 1px;
 }
 
-.profile {
-  /* change position on first page with padding top and right*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 200px;
-  padding-right: 100px;
+.profile{ /* change position on first page with padding top and right*/ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    padding-right: 100px;
 }
 .card-profile img {
   max-width: 200px;
@@ -121,38 +120,22 @@ h2 {
   color: rgb(0 0 0 / 90%);
 }
 
-/* .card-profile p {
+.card-profile p {
   font-size: 14px;
   font-weight: 400;
   color: rgb(0 0 0 / 70%);
   margin-bottom: 24px;
-  
-} */
+}
 
-.btn {
+.card-profile button {
+  border: 0;
   background: #ff0055;
   color: #f8f8f8;
+  font-family: inherit;
   padding: 16px 26px;
   font-size: 16px;
   border-radius: 40px;
   margin-left: 70px;
-  
-}
-
-.btn-CV {
-  background: #ff0055;
-  padding: 16px 26px;
-  border-radius: 40px;
-  cursor: pointer;
-  transition: 0.5s;
-  display: flex;
-  color: #f8f8f8;
-  margin: 10px;
-  
-}
-
-.btn-CV:hover {
-  transform: scale(2);
 }
 
 @media (width <= 600px) {
