@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+/* body{
+  background-color: rgb(24, 24, 24);
+} */
+
 .header {
   min-width: 100vh;
   width: 100%;
@@ -98,6 +102,7 @@ h2 {
   align-items: center;
   padding-top: 200px;
   padding-right: 100px;
+
 }
 .card-profile img {
   max-width: 200px;
@@ -135,7 +140,8 @@ h2 {
   padding: 16px 26px;
   font-size: 16px;
   border-radius: 40px;
-  margin-left: 70px;
+  /* margin-left: 70px; */
+  margin: 10px 20px 30px 50px;
   
 }
 
@@ -147,8 +153,22 @@ h2 {
   transition: 0.5s;
   display: flex;
   color: #f8f8f8;
-  margin: 10px;
+  margin: 10px 20px 30px 85px;
   
+}
+
+.github{
+  cursor: pointer;
+  display: flex;
+
+}
+
+
+.img-git{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: black;
 }
 
 .btn-CV:hover {
@@ -158,11 +178,12 @@ h2 {
 @media (width <= 600px) {
   .card-profile {
     margin: 0 40px;
-    padding-left: 50px;
-    padding-right: 50px;
+    /* padding-left: 50px;
+    padding-right: 50px; */
     width: 100%;
     text-align: center;
     flex-direction: column;
+    margin: 0px 0px 0px 100px;
   }
 
   .card-profile h2 {
@@ -173,8 +194,23 @@ h2 {
   .card-profile img {
     margin: -100px 0 30px 0;
     width: 100%;
-    max-width: 1000px;
+    max-width: 32vh;
+    border-radius: 100px;
+    filter: drop-shadow(10px 8px 60px #aa0039);
+   
   }
+
+  .btn{
+    margin: 10px 0px 0px 10px;
+  }
+
+  .btn-CV{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px 0px 110px;
+  }
+
 }
 
 /* .img-perfil{
