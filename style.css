@@ -163,14 +163,6 @@ h2 {
 
 }
 
-
-.img-git{
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  color: black;
-}
-
 .btn-CV:hover {
   transform: scale(2);
 }
