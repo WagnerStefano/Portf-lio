@@ -162,21 +162,18 @@ button {
   cursor: pointer;
   outline: none;
   border: 0;
-  vertical-align: middle;
-  text-decoration: none;
   font-size: 1rem;
   /* color: var(--colorShadeA); */
   font-weight: 700;
-  text-transform: uppercase;
-  font-family: poppins;
+  font-family: Poppins;
   background-color: red;
 }
 
 button.big-button {
-  padding: 1em 2em;
+  padding: 10px 10px 10px 10px;
   border: 2px solid #f80053;
   border-radius: 1em;
-  background: #fd82ab;
+  background: #f7d7e2;
   transform-style: preserve-3d;
   transition: all 175ms cubic-bezier(0, 0, 1, 1);
 }
