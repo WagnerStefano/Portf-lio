@@ -13,53 +13,79 @@
          <section class="header">
                 <div class="nav-links">
             <nav>
-                    <ul>
-                        <li><a href="#Home">Inicio</a></li>
+                    <ul class="list">
+                        <li><a href="#Home">Home</a></li>
                         <li><a href="#about">Sobre</a></li>
                         <li><a href="#projects">Projetos</a></li>
-                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="#contact">Contatos</a></li>
                     </ul>
-                </div>
+                
             </nav>
+          </div>
          </section>
-         <!-- <div class="text"><h1>Hi</h1>
-         <h2>i'm Wagner Stefano</h2>
-         <h2>and im a Full Stack Developer</h2> -->
+        
         </div>
-        <!-- <div class="img-perfil"><img class="perfil" src="./img/perfil.jpg" alt="perfil"></div> -->
     </section>
     <section class="profile">
     <div class="card-profile">
         <img src="./img/perfil.jpg" />
-        <div>
-          <h1>HI</h1>
-          <h2>Im Wagner Stefano</h2>
-          <h2>and im a Full Stack Developer</h2>
-          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo hic magnam distinctio quis ea omnis neque maxime perferendis, voluptatum non.
-          </p> -->
+        <div class="text-img">
+          <h1>Oi</h1>
+          <h2>Eu sou o Wagner Stefano</h2>
+          <h2>E sou Dev Full Stack</h2>
+          <h5>em desenvolvimento haha!</h5>
 
- 
-
-          <button class="btn">Learn more about me</button>
+          <div class="buttons">
+          <button class="btn"><a href="#about">Sobre mim</a></button>
           <button class="btn-CV">Download CV</button>
+        </div>
         
         </div>
       </div>
     </section>
-    <!------------------- Page Switcher--------------
-     <div class="buttons">
-        <button>PT - BR</button>
-        <button>ENG - US</button>
+    <!-- ----------------- Page Switcher-------------- -->
+
+     <div class="buttons-sw">
+        <!-- <button class="pt">PT - BR </button>
+        <button class="eng"><a href="index.html">ENG - US</a></button> -->
+
+        <input type="checkbox" class="checkbox" id="chk"/>
+        <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+
       </div> 
-    ------------------- Page Switcher---------------->
+
+
+
+
+
+      <div class="buttons-sw-br-usa">
+
+        <input type="checkbox" class="checkbox" id="swt" onchange="toggleLenguage()">
+        <label class="label" for="swt"><div class="ball"></div>
+        </label>
+  
+      </div> 
+
+      
+    <!-- ------------------- Page Switcher-------------- -->
     <section id="about" class="about">
         <h1 class="about-h1">Sobre</h1>
-        <p class="p-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptates sed rerum exercitationem ipsum sapiente aliquid fuga ad, aliquam ipsam accusamus adipisci maxime minima? Voluptatibus ducimus cupiditate quos, nobis saepe beatae ea provident eveniet recusandae. Numquam porro a ipsam autem. Similique porro reiciendis rem vel animi aperiam ullam placeat velit harum commodi. Similique architecto ad cumque facilis saepe eveniet, asperiores natus, deleniti quae hic porro tempore eius ducimus iste eligendi repellendus dicta laudantium corporis dolores quo nulla quod voluptatem possimus. Quam odit alias, cumque commodi odio porro nesciunt? Soluta laboriosam nam vel necessitatibus molestias! Adipisci esse ab distinctio accusantium quis animi alias obcaecati repellendus quo facilis laborum, reprehenderit ad ea tempora atque ex enim libero doloribus provident quasi, soluta odio doloremque. Odit optio harum debitis nesciunt ipsa repellendus perferendis ad, est sapiente a voluptatem, tempore necessitatibus ullam magnam sed fugiat dolores neque aperiam veritatis doloribus tempora temporibus at? Ipsa officia illum, possimus autem consequuntur ut asperiores quas, explicabo obcaecati quos velit, iste unde facere ab exercitationem nisi laborum! Beatae velit numquam placeat expedita fugit eum. Corrupti temporibus laudantium eligendi vitae iure quod ea nihil impedit officiis! Sint, neque dignissimos? Aut aliquid illum facere esse vero a numquam ipsam labore fugiat!</p>
+        <p class="p-about">Olá, se você chegou até aqui provavelmente vai querer saber mais sobre mim, então vamos lá haha </p>
+        <p class="p-about1"> a este ponto você já sabe que me chamo Wagner Stefano mas vamos nos aprofundar</p>
+        <p class="p-about2">Tenho 25 Anos, cursando Ciência da Computação na Universidade Nove de Julho,</p> 
+        <p class="p-dream"> um grande sonho de estudar no Canadá, já tenho planos ;)</p>
+        <p class="p-about3">Atualmente possuo conhecimento em HTML, CSS, JavaScript, SQL, Java, TypeScript, Angular.</p>
+
+        </p>
     </section>
 
     <section id="projects" class="projects">
-        <h1>Projetos</h1>
-        <p class="p-projects">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio cumque, fuga iusto repellat repudiandae voluptatum dicta atque. Obcaecati, eum quis.</p>
+        <h1 class="h1-projects">Projetos</h1>
+        <p class="p-projects">Aqui estão alguns de meus projetos, feitos em estudo de algumas tecnicas de consumo de API, Alterações em CSS treino de Layout e desenvolvimento de Landing Pages</p>
 
         <div class="container">
             <div class="card">
@@ -131,14 +157,16 @@
             <img class="logo-footer" src="./img/logo-husky.png" />
             <div class="links">
               <div>
-                <h2>Platform</h2>
+                <h2>Social</h2>
                 <a>Github</a>
+                <a>Linkedin</a>
 
               </div>
               <div>
                 
-                <h2>Cloud</h2>
+                <h2>Media</h2>
                 <a class="github" href="https://github.com/WagnerStefano" target="_blank"><i class="fa-brands fa-github" style="color: #121212;"></i></a>
+                <a class="github" href="https://github.com/WagnerStefano" target="_blank"><i class="fa-brands fa-linkedin" style="color: #121212;"></i></a>
 
               </div>
             </div>
@@ -153,9 +181,9 @@
             </div>
           </footer>
         </section>
-    </section>
+    
 
-        
+        <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/20430b24d2.js" crossorigin="anonymous"></script>
 </body>
 
