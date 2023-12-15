@@ -10,7 +10,7 @@ swtCheckbox.addEventListener("change", () => {
   var isChecked = swtCheckbox.checked;
 
   // Determina qual arquivo deve ser carregado com base no estado do checkbox
-  var newFileName = isChecked ? "index.html" : "index-pt.html";
+  var newFileName = isChecked ? "index-pt.html" : "index.html";
   //Neste caso temos o Arquivo html em português efetuando a transição para o arquivo html em Inglês
 
   // Atualiza a localização para o novo arquivo

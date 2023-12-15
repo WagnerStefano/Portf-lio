@@ -9,33 +9,19 @@
   box-sizing: border-box;
 }
 
-body {
-  transition: background 0.2s linear;
-}
-
-body.dark {
-  background: #1e2225;
-  color: white;
-}
-.card-profile.dark {
-  background-color: #1e2225;
-}
-
 .header {
   min-width: 100vh;
   width: 100%;
-  /* position: fixed; */
+  position: fixed;
+  z-index: 1;
 }
 
-/* .nav {
-
-} */
-
-.list {
+.nav {
   display: flex;
-  padding: 10% 6%;
+  padding: 2% 6%;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
   width: 5%;
   height: auto;
   /* border: 2px solid rgb(141, 141, 141);
@@ -43,6 +29,7 @@ body.dark {
     background-color: rgb(129, 128, 128); */
   flex-direction: column;
   float: right;
+  background-color: red;
 }
 
 .img-logo {
@@ -60,24 +47,13 @@ body.dark {
 
 .nav-links ul li {
   display: list-item;
-  padding: 10px 80px 100px 20px;
+  padding: 10px 20px 100px;
   position: relative;
 }
 
 .nav-links ul li a {
   color: black;
   font-size: 16px;
-  position: fixed;
-  transition: 0.2s;
-}
-
-.nav-links ul li a:hover {
-  transform: scale(1.2);
-  color: #ff0055;
-  border: 1px solid rgb(255, 252, 252);
-  border-radius: 40%;
-  padding: 10px 10px 10px 10px;
-  background-color: white;
 }
 
 .text {
@@ -85,7 +61,10 @@ body.dark {
   padding-right: 40%;
 }
 
-.text-img {
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 50px;
 }
 
@@ -102,9 +81,9 @@ h2 {
   width: 75vw;
   max-width: 650px;
   padding: 50px 30px 50px 20px;
-  /* background: #ffffff; */
+  background: #ffffff;
   border-radius: 24px;
-  /* background-color: rgb(255, 255, 255); */
+  background-color: rgb(255, 255, 255);
   margin-left: 200px;
   border: solid black 1px;
 }
@@ -127,33 +106,16 @@ h2 {
   border-radius: 100%;
   /* box-shadow: 0 60px 40px rgb(0 0 0 / 8%); */
 }
-.card-profile h1 {
-  font-size: 22px;
-  margin-right: 30px;
-  display: flex;
-  justify-content: center;
-}
 
 .card-profile h2 {
   font-size: 22px;
   margin-right: 30px;
-  display: flex;
-  justify-content: center;
 }
 
 .card-profile h3 {
   font-size: 16px;
   font-weight: 400;
   color: rgb(0 0 0 / 90%);
-  display: flex;
-  justify-content: center;
-}
-.card-profile h5 {
-  font-size: 16px;
-  font-weight: 400;
-  display: flex;
-  justify-content: center;
-  color: #b1b1b1;
 }
 
 .btn {
@@ -163,7 +125,11 @@ h2 {
   font-size: 16px;
   border-radius: 40px;
   /* margin-left: 70px; */
-  margin: 10px 20px 30px 86px;
+  margin: 10px 20px 30px 50px;
+  cursor: pointer;
+}
+
+.buttons {
   cursor: pointer;
 }
 
@@ -189,64 +155,16 @@ h2 {
   margin: 10px 20px 30px 85px;
 }
 
-.fa-brands {
-  background: transparent;
-  padding: 20px 20px;
-  border-radius: 100%;
-  cursor: pointer;
-  transition: 0.5s;
-  display: flex;
-  color: #000000;
-  margin: 10px 20px 30px 50px;
-}
-
-.fa-brands:hover {
-  transform: scale(1.2);
-  filter: drop-shadow(2px 4px 2px #fd82ab);
-  background: #ff0055;
-}
-
-/* .github {
+.github {
   cursor: pointer;
   display: flex;
-} */
+}
 
 .btn-CV:hover {
-  transform: scale(1.2);
+  transform: scale(2);
 }
 
 @media (width <= 600px) {
-  .profile {
-    padding-top: 150px;
-  }
-
-  .card-profile h1 {
-    font-size: 22px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .card-profile h2 {
-    font-size: 15px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .card-profile h3 {
-    font-size: 16px;
-    font-weight: 400;
-    color: rgb(0 0 0 / 90%);
-    display: flex;
-    justify-content: center;
-  }
-  .card-profile h5 {
-    font-size: 16px;
-    font-weight: 400;
-    display: flex;
-    justify-content: center;
-    color: #b1b1b1;
-  }
-
   .card-profile {
     margin: 0 40px;
     /* padding-left: 50px;
@@ -271,19 +189,30 @@ h2 {
   }
 
   .btn {
-    /* margin: 10px 0px 0px 10px; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 10px 0px 0px 10px;
   }
 
   .btn-CV {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin: 10px 0px 0px 110px; */
+    margin: 10px 0px 0px 110px;
   }
 }
+
+/* .img-perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil{
+    
+    width: 200px;
+    height: 180px;
+   border: 2px solid black;
+   border-radius: 50%;
+} */
 
 .about {
   width: 80%;
@@ -291,60 +220,17 @@ h2 {
   text-align: acenter;
   padding-top: 200px;
 }
-.h1-projects {
-  padding: 200px 50px 20px 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .about-h1 {
-  font-size: 50px;
+  font-size: 36px;
   font-weight: 600;
-  display: flex;
-  justify-content: center;
 }
 
 .p-about {
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 22px;
   padding: 10px;
-  display: flex;
-  justify-content: center;
-}
-
-.p-about1 {
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 22px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-}
-.p-about2 {
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 22px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-}
-.p-dream {
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 22px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-}
-.p-about3 {
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 22px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
 }
 
 .projects .p-projects {
@@ -362,9 +248,6 @@ h2 {
   padding: 20px;
   gap: 20px;
 }
-/* .projects{
- 
-} */
 
 .project {
   flex-basis: 28%;
@@ -422,7 +305,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 30px 20px 10px 50px;
+  padding: 30px;
 }
 
 .card {
@@ -537,23 +420,15 @@ padding: 50px 80px 50px 30px;
 justify-content: right;
 cursor: pointer;
 } */
-
-.buttons-sw-br-usa {
+.buttons-sw {
   display: flex;
   align-items: center;
   justify-content: left;
-  padding: 0px 0px 0px 40px;
+  padding: 150px 50px 10px 20px;
   gap: 10px;
 }
 
-.buttons-sw {
-  z-index: 0;
-  display: flex;
-  align-items: center;
-  justify-content: right;
-}
-
-/* .pt {
+.pt {
   cursor: pointer;
   border-radius: 20px;
   border: 2px solid black;
@@ -561,6 +436,7 @@ cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url(./img/bra.png);
 }
 
 .eng {
@@ -571,53 +447,7 @@ cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-} */
-
-.checkbox {
-  opacity: 0;
-  position: absolute;
-}
-
-.label {
-  background: black;
-  border-radius: 50px;
-  cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 5px;
-  position: relative;
-  height: 20px;
-  width: 50px;
-
-  transform: scale(1.5);
-}
-
-.label .ball {
-  background-color: #fff;
-  border-radius: 50%;
-  position: absolute;
-  top: px;
-  left: 2px;
-
-  height: 20px;
-  width: 20px;
-
-  transform: translateX(0px);
-  transition: transform 0.2s linear;
-}
-.checkbox:checked + .label .ball {
-  transform: translateX(24px);
-}
-
-.fa-moon {
-  color: #b6b6b6;
-}
-
-.fa-sun {
-  color: #fcb646;
+  background-image: url(./img/usa.png);
 }
 
 /*------------------- Footer-------------- */
@@ -628,23 +458,39 @@ cursor: pointer;
   bottom: 12px;
   width: 100%;
   /* background:; */
-  padding-top: 200px;
+  padding-top: 60px;
 }
 
 footer {
   display: flex;
   align-items: center;
   gap: 100px;
+  margin: 0 30px;
+}
 
-  margin: 0 auto;
-  max-width: 600px;
-  padding: 0;
+@media (width < 620px) {
+  footer {
+    flex-direction: column;
+  }
+
+  footer.bottom {
+    gap: 16px;
+    flex-direction: column-reverse;
+  }
 }
 
 .logo-footer {
   margin-top: 10px;
   width: 200px;
   justify-content: space-between;
+}
+
+@media (width >= 620px) {
+  footer {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0;
+  }
 }
 
 footer {
@@ -662,22 +508,19 @@ footer.bottom {
 }
 
 footer.top .links {
-  /* display: grid;
-  grid-template-columns: repeat(2, 2fr); */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  background-color: red;
 }
 
-.links .grid {
+.links > div {
   display: grid;
   gap: 10px;
   margin-bottom: 30px;
-  grid-template-columns: 2fr 4fr;
-  background-color: whitesmoke;
 }
 
-footer .social {
-  margin: 10px;
+footer h2 {
+  margin: 0;
   font-size: 16px;
   font-weight: 400;
   color: #b1b1b1;
@@ -703,27 +546,6 @@ footer.bottom .links {
 footer.bottom .links > a {
   font-size: 24px;
 }
-/* ----------------------@media-------------------- */
-
-@media (width < 620px) {
-  footer {
-    flex-direction: column;
-  }
-
-  footer.bottom {
-    gap: 16px;
-    flex-direction: column;
-  }
-}
-
-/* @media (width >= 620px) {
-  footer {
-    margin: 0 auto;
-    max-width: 600px;
-    padding: 0;
-    
-  }
-} */
 
 @media (width < 600px) {
   .container .card:hover .content {
@@ -752,4 +574,3 @@ footer.bottom .links > a {
     margin-bottom: 2px;
   }
 }
-/* ----------------------@media-------------------- */
