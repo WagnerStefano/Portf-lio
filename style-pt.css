@@ -175,7 +175,7 @@ h2 {
   transition: 0.5s;
   display: flex;
   color: #f8f8f8;
-  margin: 10px 20px 30px 85px;
+  margin: 10px 20px 30px 60px;
 }
 
 .cv {
@@ -665,7 +665,7 @@ footer.top .links {
   /* display: grid;
   grid-template-columns: repeat(2, 2fr); */
   gap: 30px;
-  background-color: red;
+  
 }
 
 .links .grid {
@@ -673,7 +673,7 @@ footer.top .links {
   gap: 10px;
   margin-bottom: 30px;
   grid-template-columns: 2fr 4fr;
-  background-color: whitesmoke;
+  
 }
 
 footer .social {

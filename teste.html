@@ -3,10 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="teste.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style-pt.css">
+    <title>Meu Portfólio</title>
+    
 </head>
 <body>
-    <a href="#" class="button">Hover me</a>
+    <section id="Home">
+        <a  href="index.html"><img class="img-logo" src="./img/logo-husky.png" alt="Logo"></a>
+         <section class="header">
+                <div class="nav-links">
+            <nav>
+                    <ul class="list">
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                
+            </nav>
+          </div>
+         </section>
+        
+        </div>
+    </section>
+    <section class="profile">
+    <div class="card-profile">
+        <img src="./img/perfil.jpg" />
+        <div class="text-img">
+          <h1>HI</h1>
+          <h2>I'm Wagner Stefano</h2>
+          <h2>and I'm a Full Stack developer</h2>
+          <h5>in development haha!</h5>
+
+          <div class="buttons">
+          <button class="btn"><a href="#about">Sobre mim</a></button>
+          <button class="btn-CV">Download CV</button>
+        </div>
+        
+        </div>
+      </div>
+    </section>
+    <!-- ----------------- Page Switcher-------------- -->
+
+     <div class="buttons-sw">
+        <!-- <button class="pt">PT - BR </button>
+        <button class="eng"><a href="index.html">ENG - US</a></button> -->
+
+        <input type="checkbox" class="checkbox" id="chk"/>
+        <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+
+      </div> 
+
+
+
+
+
+      <div class="buttons-sw-br-usa">
+
+        <input type="checkbox" class="checkbox" id="swt" onchange="toggleLenguage()">
+        <label class="label" for="swt"><div class="ball"></div>
+        </label>
+  
+      </div> 
+
+      
+    <!-- ------------------- Page Switcher-------------- -->
+    <section id="about" class="about">
+        <h1 class="about-h1">About me</h1>
+        <p class="p-about">Hi, if you've made it this far you'll probably want to know more about me, so let's go haha</p>
+        <p class="p-about1">at this point you already know that my name is Wagner Stefano but let's go deeper</p>
+        <p class="p-about2">I'm 25, studying Computer Science at the Nove de Julho University,</p> 
+        <p class="p-dream"> a big dream to study in Canada, I already have plans ;)</p>
+        <p class="p-about3">I currently have knowledge in HTML, CSS, JavaScript, SQL, Java, TypeScript, Angular.</p>
+
+        </p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h1 class="h1-projects">Projects</h1>
+        <p class="p-projects">Here are some of my projects, carried out by studying some API consumption techniques, CSS changes, layout training and Landing Page development.</p>
+
+        <div class="container">
+            <div class="card">
+                <div class="img-box">
+                    <img src="./img/Glasmorphism.PNG" alt="">
+                    <!-- <video src="./img/Glasmorphism-video.mp4"></video> -->
+                </div>
+                <div class="content">
+                    <h2>Glasmorphism</h2>
+                    <p>For one of my early development projects, I studied Glassmorphism, a beautiful CSS effect that is easy to implement and helps to clarify all CSS connections.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-box">
+                    <img src="./img/Pokedex.PNG" alt="">
+                </div>
+                <div class="content">
+                    <h2>Pokedex</h2>
+                    <p>Another one of my early development projects - a Pokedex. It was created using HTML, CSS, and JS, and it consumes a free API to provide information and models.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-box">
+                    <img src="./img/Starbucks.PNG" alt="">
+                </div>
+                <div class="content">
+                    <h2>Starbucks</h2>
+                    <p>For one of my early development projects, I created a clone of the Starbucks website template. This project helped me practice using HTML, CSS, and JS to change colors based on the selected product.</p>
+                </div>
+            </div>
+
+
+            <!-- <div class="card">
+                <div class="img-box">
+                    <img src="./img/" alt="">
+                </div>
+                <div class="content">
+                    <h2>Card Four</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quam aliquam, rerum soluta dolorem deserunt odit vero nobis sed laborum?</p>
+                </div>
+            </div>
+                        Model to create every card with animations with template grid -->
+
+        </div>
+
+        <div class="row">
+            <div class="project">
+                <div class="layer"><h2 class="loading">Loading...</h2>
+                </div>
+            </div>
+            <div class="project">
+                <div class="layer"><h2 class="loading">Loading...</h2>
+                </div>
+            </div>
+            <div class="project">
+                <div class="layer"><h2 class="loading">Loading...</h2>
+                </div>
+            </div>
+            
+        </div>
+
+
+
+    </section>
+
+    <section class="contact" id="contact">
+        
+        <footer class="top">
+            <img class="logo-footer" src="./img/logo-husky.png" />
+            <div class="links">
+              <div>
+                <h2>Social</h2>
+                <a>Github</a>
+                <a>Linkedin</a>
+
+              </div>
+              <div>
+                
+                <h2>Media</h2>
+                <a class="github" href="https://github.com/WagnerStefano" target="_blank"><i class="fa-brands fa-github" style="color: #121212;"></i></a>
+                <a class="github" href="https://github.com/WagnerStefano" target="_blank"><i class="fa-brands fa-linkedin" style="color: #121212;"></i></a>
+
+              </div>
+            </div>
+          </footer>
+          <footer class="bottom">
+            <div class="legal">
+              <span class="rights"> © 2023 All rights reserved </span>
+            </div></html>
+            <div class="links">
+              <a class="fa-brands fa-github"  href="https://github.com/WagnerStefano" ></a>
+              <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/wagner-stefano-96982021a/" ></a>
+            </div>
+          </footer>
+        </section>
+    
+
+        <script src="script-eng.js"></script>
+    <script src="https://kit.fontawesome.com/20430b24d2.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -16,3 +16,14 @@ swtCheckbox.addEventListener("change", () => {
   // Atualiza a localização para o novo arquivo
   window.location.href = newFileName;
 });
+
+// let data ={
+//     pt:{
+//       title:"",
+//       description
+//     },
+//     eng{
+//       title:,
+//       description""
+//     }
+// }
